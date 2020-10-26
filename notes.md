@@ -18,6 +18,7 @@ https://golang.org/pkg
 https://play.golang.org/
 
 ## Some Basic Data Types
+
 - bool
 - string
 - int
@@ -57,3 +58,13 @@ func main() {
   fmt.Println("Hello")
 }
 ```
+
+---
+
+| Value Types (need pointers) | Reference Types (don't need pointers) |
+| :-------------------------: | :-----------------------------------: |
+|             int             |                slices                 |
+|            float            |                 maps                  |
+|           string            |               channels                |
+|            bool             |               pointers                |
+|           structs           |               function                |
