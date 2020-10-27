@@ -61,10 +61,25 @@ func main() {
 
 ---
 
+## Value Types vs Reference Types
+
 | Value Types (need pointers) | Reference Types (don't need pointers) |
-| :-------------------------: | :-----------------------------------: |
-|             int             |                slices                 |
-|            float            |                 maps                  |
-|           string            |               channels                |
-|            bool             |               pointers                |
-|           structs           |               function                |
+| --------------------------- | ------------------------------------- |
+| int                         | slices                                |
+| float                       | maps                                  |
+| string                      | channels                              |
+| bool                        | pointers                              |
+| structs                     | function                              |
+
+---
+
+## Map vs Struct
+
+| Map                                                 | Struct                                                       |
+| --------------------------------------------------- | ------------------------------------------------------------ |
+| keys must be same type                              | values can be of different type                              |
+| values must be same type                            |                                                              |
+| can be iterated over                                | keys can't be indexed                                        |
+| use to represent a collection of related properties | need to know all fields at compile time                      |
+| reference type                                      | value type                                                   |
+| Dont need to know all the keys at compile time      | use to represent a "thing" with lots of different properties |
