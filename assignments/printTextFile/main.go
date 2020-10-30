@@ -22,7 +22,7 @@ func printFile(filename string) {
 	if err != nil {
 		fmt.Println(filename, "not found.")
 	} else {
-		io.Copy(os.Stdin, file)
+		io.Copy(os.Stdout, file)
 		fmt.Println()
 	}
 }
